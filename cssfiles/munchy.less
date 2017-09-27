@@ -14,20 +14,162 @@
  * }
 */
 
-#title {
-  padding: 20px;
-  border-style: solid;
-  border-width: 10px;
+// These are the icon CSS
+.fa-cutlery {
+  color: rgba(159, 196, 202, 1);
 }
 
+.fa-cutlery:hover {
+  color: rgba(108, 145, 151, 1);
+}
+
+.fa-book {
+  color: rgba(237, 210, 167, 1);
+}
+
+.fa-book:hover {
+  color: rgba(186, 159, 116, 1);
+}
+
+.fa-wifi {
+  color: rgba(172, 223, 172, 1);
+}
+
+.fa-wifi:hover {
+  color: rgba(121, 172, 121, 1);
+}
+
+.fa-group {
+  color: rgba(215, 101, 101, 1);
+}
+
+.fa-group:hover {
+  color: rgba(164, 50, 50, 1);
+}
+
+//These are the link colors,the default should be white
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #999999;
+}
+
+a:hover {
+  color: #029bc9;
+}
+
+// This is the main title style
+#title {
+  color: white;
+  padding: 20px;
+  background: rgb(255, 255, 255, );
+  background: rgba(33, 33, 33, 0.3);
+}
+
+//These are the style boxes for the about us page
+#alfred {
+  padding: 60px;
+  color: white;
+  background: rgba(159, 196, 202, 1);
+  p {
+    font-size: 25px;
+    color: white;
+  }
+}
+
+#carlos {
+  padding: 60px;
+  color: white;
+  background: rgba(237, 210, 167, 1);
+  p {
+    font-size: 25px;
+    color: white;
+  }
+}
+
+#daniel {
+  padding: 60px;
+  color: white;
+  background: rgba(215, 101, 101, 1);
+  p {
+    font-size: 25px;
+    color: white;
+  }
+}
+
+#explore {
+  font-size: 50px;
+}
+
+#projectTitle {
+  font-size: 65px;
+  color: White;
+  padding-bottom: 25px;
+  background: rgb(255, 255, 255, );
+  background: rgba(33, 33, 33, 0.5);
+}
+
+#leftfooter {
+  padding-top: 55px;
+}
+
+#stats {
+  font-size: 25px;
+  padding-bottom: 25px;
+}
+
+//These are the styling for the middle row boxes
+.leftboxDetails {
+  padding: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: rgb(215, 101, 101, );
+  background: rgba(215, 101, 101, 1);
+  color: white;
+  font-size: 26;
+}
+
+.rightboxDetails {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: rgb(159, 196, 202, );
+  background: rgba(159, 196, 202, 1);
+  color: white;
+  font-size: 26;
+}
+
+.topboxDetails {
+  margin-bottom: 30px;
+  padding: 35px;
+  background: rgb(237, 210, 167, );
+  background: rgba(237, 210, 167, 1);
+  color: white;
+  font-size: 26;
+}
+
+#tableHeader {
+  font-size: 45px;
+}
+
+#tableDisplay {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// End of middle row styling
 #search_gap {
   padding-top: 50px;
 }
 
 .navbar {
-  font-size: 20;
+  font-size: 30;
+  color: fff;
+  background: #f5efda;
 }
 
+//End of BG Vid code
 //
 // Variables
 // --------------------------------------------------
@@ -90,7 +232,7 @@ monospace;
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed : floor((@font-size-base * @line-height-base)); // ~20px
 //** By default, this inherits from the `<body>`.
-@headings-font-family : "Lato";
+@headings-font-family : "Acme";
 @headings-font-weight : 500;
 @headings-line-height : 1.1;
 @headings-color : inherit;
@@ -746,3 +888,27 @@ monospace;
 
 /* PINGENDO COMMENT DO NOT REMOVE */
 
+.footer {
+  background: #333333;
+  font-size: 18;
+  color: white;
+}
+
+.bars {
+  background: #333333;
+  color: #fff;
+  font-size: 36;
+  padding: 50;
+}
+
+.midbox {
+  background: #f7f3e3;
+}
+
+.projectmainrow {
+  font-size: 36;
+  color: fff;
+  background: #333333;
+  padding: 50;
+  margin: 25;
+}

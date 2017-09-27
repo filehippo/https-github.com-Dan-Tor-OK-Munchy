@@ -16,11 +16,12 @@ $addr = mysqli_real_escape_string($link, $_REQUEST['stnum']);
 $stn = mysqli_real_escape_string($link, $_REQUEST['stname']);
 $st = mysqli_real_escape_string($link, $_REQUEST['state']);
 $zip = mysqli_real_escape_string($link, $_REQUEST['zip']);
+$cat = mysqli_real_escape_string($link, $_REQUEST['catt']);
+$pho = mysqli_real_escape_string($link, $_REQUEST['phon']);
 
 
 
-
-$sql = "INSERT INTO  `okaymunchy`.`base` (`id` ,`name` ,`address num` ,`street` ,`state` ,`zip`) VALUES (NULL ,  '$Name',  '$addr',  '$stn',  '$st',  '$zip')";
+$sql = "INSERT INTO  `okaymunchy`.`base` (`id_base` ,`name` ,`address num` ,`street` ,`state` ,`zip`,`categories`,`phone`) VALUES (NULL ,  '$Name',  '$addr',  '$stn',  '$st',  '$zip','$cat','$pho')";
 
 
 if(mysqli_query($link, $sql)){

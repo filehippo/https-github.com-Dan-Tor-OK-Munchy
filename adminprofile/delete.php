@@ -27,11 +27,16 @@ if ($conn -> connect_error){
 mysqli_select_db($conn,'okaymunchy');
 
 
-$sql = "DELETE FROM base WHERE ID='$_GET[id]'";
+$sql = "DELETE FROM base WHERE ID_BASE='$_GET[id_base]'";
 
+
+echo"Successfully deleted";
 
 if (mysqli_query($conn,$sql))
-header("refresh:1; url=profile.php");
+
+
+
+header("refresh:2; url=profile.php");
 else
     echo"NOT DELETED";
 

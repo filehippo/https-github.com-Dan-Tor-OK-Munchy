@@ -70,10 +70,10 @@ include('session.php');
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="database.php">Manage Admins</a></li>
+            <li><a href="manadmins.php">Manage Admins</a></li>
             <li><a href="/adminprofile/addrest/test.html">Add Restaurant</a></li>
-            <li><a href="database.php">Manage Menu</a></li>
-            <li><a href="database.php">Manage Comments </a></li>
+            <li><a href="addmenuitem.php">Manage Menu</a></li>
+            <li><a href="/adminprofile/managecomment.php">Manage Comments </a></li>
             
           </ul>
         </div>
@@ -181,7 +181,17 @@ if ($result-> num_rows >0){
  echo '<div class="table-responsive">';
  echo '<table class="table table-striped">';
 
-	echo "<thead><tr><th>name</th><th>address #</th><th>str name</th><th>state</th><th>zip</th><th>actions</th></tr>";
+echo "<thead><tr>
+
+<th>name</th>
+<th>address #</th>
+<th>str name</th>
+<th>state</th>
+<th>zip</th>
+<th>categories</th>
+<th>phone #</th>
+
+<th>actions</th></tr>";
 
 echo"</thead>";
 
@@ -196,13 +206,16 @@ echo"<tr><tbody><tr>
 <td><input type=text name=street value='" . $row["street"] . "'></td>
 <td><input type=text name=state value='" . $row["state"] . "'></td>
 <td><input type=text name=zipo value='"  . $row["zip"] . "'></td>
-<td><input type=hidden name=id value='" . $row["id"] . "'></td>
+<td><input type=text name=cate value='"  . $row["categories"] . "'></td>
+<td><input type=text name=phonn value='"  . $row["phone"] . "'></td>
+
+<td><input type=hidden name=id_base value='" . $row["id_base"] . "'></td>
 
 <td><input type=submit value=Update></td>
 
 </form>
 
-<td><a href =delete.php?id=". $row["id"] . " >Delete</a></td></tr>";
+<td><a href =delete.php?id_base=". $row["id_base"] . " >Delete</a></td></tr>";
 
 echo"</tbody>";
 

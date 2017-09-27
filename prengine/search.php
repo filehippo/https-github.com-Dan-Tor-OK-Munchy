@@ -15,6 +15,7 @@ $dbName = 'okaymunchy';
 
 
 //connect with the database
+
 $db = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
 

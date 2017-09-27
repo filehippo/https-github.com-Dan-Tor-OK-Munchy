@@ -28,10 +28,11 @@ if ($conn -> connect_error){
 mysqli_select_db($conn,'okaymunchy');
 
 
+echo"Updated Successfully";
 
 
-
-$sql="UPDATE base SET `name`='$_POST[rname]', `address num` ='$_POST[address]',`street`='$_POST[street]',`state`='$_POST[state]',`zip`='$_POST[zipo]' WHERE `id`='$_POST[id]'";
+$sql="UPDATE base SET `name`='$_POST[rname]', `address num` ='$_POST[address]',`street`='$_POST[street]',`state`='$_POST[state]',`zip`='$_POST[zipo]',`categories`='$_POST[cate]'
+,`phone`='$_POST[phonn]' WHERE `id_base`='$_POST[id_base]'";
 
 
 

@@ -5,7 +5,10 @@ if(isset($_POST['submit']))
 	$name=$_POST['namename'];
 	
 	$message=$_POST['message'];
-	$insert=mysql_query("insert into `okaymunchy`.`commenttable`(`name`, `message`, `id`, `com_id`)values('$name','$message', NULL, '2')")or die(mysql_error());
+
+        $num = 10;
+
+	$insert=mysql_query("insert into `okaymunchy`.`commenttable`(`name`, `message`,`com_id`)values('$name','$message', '$num')")or die(mysql_error());
 
 
 

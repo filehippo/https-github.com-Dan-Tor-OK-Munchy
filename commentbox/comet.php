@@ -1,6 +1,16 @@
 <?php
 include("db.php");
-$select=mysql_query("select * from commenttable");
+
+
+
+
+//$select=mysql_query("select * from commenttable");
+
+$select=mysql_query("SELECT * FROM  `commenttable` WHERE  `com_id` =  '10' ");
+
+
+
+
 while($row=mysql_fetch_array($select))
 {
 	echo "<div id='sty'>";
@@ -21,7 +31,7 @@ while($row=mysql_fetch_array($select))
 {
 	margin:0 auto;
 	margin-top:3px;
-	border:#0F0 dashed 2px;
+	border:#000000 solid 3px;
 	width:500px;
 	padding:15px;
 	}
@@ -37,14 +47,14 @@ img
 #nameid
 {
 	font-size:18px;
-	color:#06F;
+	color:#01050b;
 	font-family:"Comic Sans MS", cursive;
 	margin-bottom:5px;
 }
 #msgid
 {
 	font-size:20px;
-	color:#3CF;
+	color:#000000;
 	font-family:"Courier New", Courier, monospace;
 	margin-bottom:5px;
 }
@@ -120,11 +130,18 @@ function validation()
 	}
 }
 </script>
+
+
+
 </head>
 
 <body>
 <form name="comment" method="post" action="comment.php" onSubmit="return validation()">
+
+
 <table width="500" border="0" cellspacing="3" cellpadding="3" style="margin:auto;">
+
+
   <tr>
     <td align="right" id="one">Name :<span style="color:#F00;">*</span></td>
     <td><input type="text" name="namename" id="tnameid"></td>
@@ -134,6 +151,12 @@ function validation()
   
     <td align="right" id="one"></td>
     <td><textarea name="message" id="tmessageid"></textarea></td>
+
+
+
+
+
+
   </tr>
   <tr>
   <td align="right" id="one"></td>

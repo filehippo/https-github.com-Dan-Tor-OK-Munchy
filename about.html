@@ -1,17 +1,12 @@
 <html><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <script type="indexsources/jquery.min.js"></script>
     <script type="indexsources/bootstrap.min.js"></script>
     <link href="indexsources/font-awesome.min.css" rel="stylesheet" type="text/css">
-
     <link href="cssfiles/munchy.css" rel="stylesheet" type="text/css">
-  </head>
-<body>
-
-
-    <div class="navbar-default navbar-static-top navbar">
+  </head><body>
+    <div class="navbar navbar-default navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
@@ -20,7 +15,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php"><span>OKM!</span></a>
+          <a class="navbar-brand"></a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -34,79 +29,93 @@
         </div>
       </div>
     </div>
-
-
-
     <div class="section">
-      <div class="background-image background-image-fixed" style="background-image : url('pics/lightpaper.png')"></div>
+      <div class="background-image background-image-fixed" style="background-image : url('pics/mainbackground.jpg')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="text-center" id="title">
-              <b>THE TEAM</b>
-            </h1>
+            <h1 class="text-center" id="projectTitle">The Project</h1>
+            <p class="projectmainrow">Okay Munchy is a web app designed for our CS 4318 Theory DB &amp; File
+              Structures class. Its purpose is to catalogue restaurants we like to visit
+              and provide relevant information.&nbsp;</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <img src="pics/me.jpeg" class="img-circle img-responsive">
-            <h2>Alfred Albizures</h2>
-            <p>DataBase and PHP Developer,
-              <br>Full Stack Dev.
-              <br>In Charge of the back end</p>
-          </div>
-          <div class="col-md-4">
-            <img src="pics/carlos.jpeg" class="img-circle img-responsive">
-            <h2>Carlos Moreno</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-              <br>Ut enim ad minim veniam, quis nostrud</p>
-          </div>
-          <div class="col-md-4">
-            <img src="pics/dandan.jpg" class="img-circle img-responsive">
-            <h2>Daniel Torres</h2>
-            <p>Front End and Web Design,
-              <br>Html,Css,flow control.
-              <br>Ut enim ad minim veniam, quis nostrud</p>
+      <div class="section midbox">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="pics/alf.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-8" id="alfred">
+              <h1>Alfred Albizures</h1>
+              <p>Responsible for the back end of the site.&nbsp;
+                <br>&nbsp;alfredalbizures.com&nbsp;</p>
+                <br>&nbsp;DB Project made with &#x2764; in Houston, TX &nbsp;</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section">
-      <div class="background-image" style="background-image : url('pics/lightpaper.png')"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 id="title" class="text-center">
-              <b>THE DREAM</b>
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-              <br>Ut enim ad minim veniam, quis nostrud</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-              <br>Ut enim ad minim veniam, quis nostrud</p>
-          </div>
-          <div class="col-md-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-              <br>Ut enim ad minim veniam, quis nostrud</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-              <br>Ut enim ad minim veniam, quis nostrud</p>
+      <div class="section midbox">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8" id="carlos">
+              <h1>Carlos Moreno</h1>
+              <p>In charge of testing and coding various parts of the site from the back
+                end and front end.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="pics/carl.jpg" class="img-responsive">
+            </div>
           </div>
         </div>
       </div>
+      <div class="section midbox">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="pics/dann.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-8" id="daniel">
+              <h1>Daniel Torres</h1>
+              <p>Front End Designer. Used a variety of tools to design the site.
+                 Product visionary and Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6" id="leftfooter">
+              <h1>Okay Munchy!</h1>
+              <p>Alfred Albizures, Carlos Moreno, Daniel Torres. All Rights Reserved 2017.</p>
+            </div>
+            <div class="col-sm-6">
+              <p class="text-info text-right">
+                <br>
+                <br>
+              </p>
+              <div class="row">
+                <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                  <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                  <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                  <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                  <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 hidden-xs text-right">
+            	 <center>
+                  <a href="adminprofile/admin.php"><img src="pics/logonew.png"></a>
+                </center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    
   
 
 </body></html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Lato');
+@import url('https://fonts.googleapis.com/css?family=Acme|Lato');
 /*!
  * Default theme for Pingendo 
  * Homepage: http://pingendo.com  
@@ -12,16 +12,125 @@
  *   box-shadow : 0px 0px 10px black !important;
  * }
 */
+.fa-cutlery {
+  color: #9fc4ca;
+}
+.fa-cutlery:hover {
+  color: #6c9197;
+}
+.fa-book {
+  color: #edd2a7;
+}
+.fa-book:hover {
+  color: #ba9f74;
+}
+.fa-wifi {
+  color: #acdfac;
+}
+.fa-wifi:hover {
+  color: #79ac79;
+}
+.fa-group {
+  color: #d76565;
+}
+.fa-group:hover {
+  color: #a43232;
+}
+a:link {
+  color: #fff;
+}
+a:visited {
+  color: #999999;
+}
+a:hover {
+  color: #029bc9;
+}
 #title {
+  color: white;
   padding: 20px;
-  border-style: solid;
-  border-width: 10px;
+  background: #ffffff;
+  background: rgba(33, 33, 33, 0.3);
+}
+#alfred {
+  padding: 60px;
+  color: white;
+  background: #9fc4ca;
+}
+#alfred p {
+  font-size: 25px;
+  color: white;
+}
+#carlos {
+  padding: 60px;
+  color: white;
+  background: #edd2a7;
+}
+#carlos p {
+  font-size: 25px;
+  color: white;
+}
+#daniel {
+  padding: 60px;
+  color: white;
+  background: #d76565;
+}
+#daniel p {
+  font-size: 25px;
+  color: white;
+}
+#explore {
+  font-size: 50px;
+}
+#projectTitle {
+  font-size: 65px;
+  color: White;
+  padding-bottom: 25px;
+  background: #ffffff;
+  background: rgba(33, 33, 33, 0.5);
+}
+#leftfooter {
+  padding-top: 55px;
+}
+#stats {
+  font-size: 25px;
+  padding-bottom: 25px;
+}
+.leftboxDetails {
+  padding: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #d76565;
+  color: white;
+  font-size: 26;
+}
+.rightboxDetails {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #9fc4ca;
+  color: white;
+  font-size: 26;
+}
+.topboxDetails {
+  margin-bottom: 30px;
+  padding: 35px;
+  background: #edd2a7;
+  color: white;
+  font-size: 26;
+}
+#tableHeader {
+  font-size: 45px;
+}
+#tableDisplay {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 #search_gap {
   padding-top: 50px;
 }
 .navbar {
-  font-size: 20;
+  font-size: 30;
+  color: fff;
+  background: #f5efda;
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
@@ -1199,7 +1308,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Lato";
+  font-family: "Acme";
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -3095,8 +3204,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #337cbb;
-  border-color: #2e6fa7;
+  background-color: #d76565;
+  border-color: #d76565;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3131,11 +3240,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #337cbb;
-  border-color: #2e6fa7;
+  background-color: #a43232;
+  border-color: #a43232;
 }
 .btn-primary .badge {
-  color: #337cbb;
+  color: #a43232;
   background-color: #ffffff;
 }
 .btn-success {
@@ -6787,3 +6896,24 @@ body {
   background-attachment: fixed;
 }
 /* PINGENDO COMMENT DO NOT REMOVE */
+.footer {
+  background: #333333;
+  font-size: 18;
+  color: white;
+}
+.bars {
+  background: #333333;
+  color: #fff;
+  font-size: 36;
+  padding: 50;
+}
+.midbox {
+  background: #f7f3e3;
+}
+.projectmainrow {
+  font-size: 36;
+  color: fff;
+  background: #333333;
+  padding: 50;
+  margin: 25;
+}
