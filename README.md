@@ -14,5 +14,14 @@ The Front end was created by Daniel Torres
 Back end Architecture and Links sync was made by Alfred Albizures
 Carlos was in charge of testing and quality assurance 
 
+![alt text](http://okaymunchy.com/maps/mainscreen.png)
+![alt text](http://okaymunchy.com/maps/adminlog.png)
+![alt text](http://okaymunchy.com/maps/edit.png)
+![alt text](http://okaymunchy.com/maps/menu.png)
+
+
+
+
+
 
 This project was made with <3 in Houston TX 2017
